@@ -100,6 +100,9 @@
       }
       .story-header{
         background-color: #FFFFFF !important;
+        height: 7vh !important;
+        box-shadow: none;
+        border-bottom: 3px solid red;
       }
       .story-header .title{
         color: #000000 !important;
@@ -114,11 +117,29 @@
         color: #000000 !important;
       }
       .section-layout-credits .foreground{
-        background-color: #FFFFFF !important;
+        /* background-color: #FFFFFF !important; */
       }
       .section-layout-credits .foreground .credits {
-        color: #000000 !important;
+        /* color: #000000 !important; */
         font-size: 0.8em;
+      }
+      .story-header.compact .logoImg{
+        box-shadow: none;
+        -webkit-filter: drop-shadow(0 0 0px #fff);
+        filter: drop-shadow(0 0 0px #fff);
+        height: 6vh !important;
+      }
+      .linkContainer{
+        display: none;
+      }
+      .story-header .share {
+        color: #000;
+      }
+      .bookmarks .bookmark.active {
+        border-bottom: 1px solid red;
+      }
+      .bookmarks .bookmark:hover {
+        border-bottom: 1px solid black;
       }
       /* CUSTOM CSS RULES */
     </style>
