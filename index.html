@@ -42,9 +42,18 @@
       //---------------------------------
       //     Application configuration
       //---------------------------------
+      var appID;
+      if (navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i) || window.innerWidth < 768) {
+        console.log("Mobile browser detected");
+        appID = '4402b32013ca4a3db3eed681f682bff4';
+      }
+      else {
+        console.log("Desktop browser detected");
+        appID = '18c93dbdf3c74057918990ddf193c433';
+      }
       var configOptions = {
         // Enter an application ID created through the Cascade builder
-        appid: "18c93dbdf3c74057918990ddf193c433",
+        appid: appID,
         // https://unaids.maps.arcgis.com/apps/Cascade/index.html?appid=18c93dbdf3c74057918990ddf193c433
         // Optionally, to secure Cascade's access, if the story item is private or to use the builder
         //    configure an ArcGIS OAuth application ID (example: 6gyOg377fLUhUk6f)
